@@ -3,11 +3,27 @@ div.dischi{
 
   .disco{
     width: 300px;
+    position: $relative;
+    cursor: pointer;
+    &:hover .info{
+      display: block;
+    }
 
     img{
       width: 100%;
       min-height: $larghezza_immagine;
       max-height: $larghezza_immagine;
+    }
+
+    .info{
+      @include absolute;
+      color: $info_disco;
+      padding-left: 10px;
+      display: $dis_none;
+
+      h2,h3,h4{
+        margin-top: 15px;
+      }
     }
   }
 

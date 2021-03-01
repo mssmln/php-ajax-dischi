@@ -66,9 +66,25 @@ div.dischi {
 }
 div.dischi .disco {
   width: 300px;
+  position: relative;
+  cursor: pointer;
+}
+div.dischi .disco:hover .info {
+  display: block;
 }
 div.dischi .disco img {
   width: 100%;
   min-height: 300px;
   max-height: 300px;
+}
+div.dischi .disco .info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding-left: 10px;
+  display: none;
+}
+div.dischi .disco .info h2, div.dischi .disco .info h3, div.dischi .disco .info h4 {
+  margin-top: 15px;
 }
