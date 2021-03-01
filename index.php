@@ -6,7 +6,8 @@ Html, Sass, PHP nella milestone 1
 Html, Sass, PHP, JS, Vue nella milestone 2 (che sarà data domani) -->
 
 <?php
-include 'db.php'; // includiamo un file separato sempre php
+include __DIR__ .'/includes/db.php'; // includiamo un file separato sempre php
+// var_dump(__DIR__);
 
 ?>
 
@@ -38,8 +39,14 @@ include 'db.php'; // includiamo un file separato sempre php
           $author = $disco['author'];
           $date = $disco['date'];
         ?>
-        <div class="disco">
+        <div class="disco margin-top-20">
           <img src="<?php echo $img ?>" alt="<?php echo $name ?>">
+          <div class="info">
+            <h2><?php echo $name ?></h2>
+            <h3><?php echo $author ?></h3>
+            <h4><?php echo $date ?></h4>
+
+          </div>
 
         </div>
 

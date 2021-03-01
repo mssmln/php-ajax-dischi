@@ -64,3 +64,11 @@ div.dischi {
   justify-content: center;
   flex-wrap: wrap;
 }
+div.dischi .disco {
+  width: 300px;
+}
+div.dischi .disco img {
+  width: 100%;
+  min-height: 300px;
+  max-height: 300px;
+}

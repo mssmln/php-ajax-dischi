@@ -1,3 +1,15 @@
 div.dischi{
   @include flex(wrap); // gli passo l'argomento non settato di default
+
+  .disco{
+    width: 300px;
+
+    img{
+      width: 100%;
+      min-height: $larghezza_immagine;
+      max-height: $larghezza_immagine;
+    }
+  }
+
+
 }
