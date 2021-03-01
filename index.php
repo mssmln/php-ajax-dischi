@@ -5,6 +5,11 @@ Utilizzare:
 Html, Sass, PHP nella milestone 1
 Html, Sass, PHP, JS, Vue nella milestone 2 (che sarà data domani) -->
 
+<?php
+include 'db.php'; // includiamo un file separato sempre php
+
+?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -16,6 +21,22 @@ Html, Sass, PHP, JS, Vue nella milestone 2 (che sarà data domani) -->
   <title>Document</title>
 </head>
 <body>
+  <?php
+  foreach($dischi as $disco){
+    // var_dump($disco);
+    $img = $disco['img'];
+    $name = $disco['name'];
+    $author = $disco['author'];
+    $date = $disco['date'];
+  ?>
+  <div class="">
+    <img src="<?php echo $img ?>" alt="<?php echo $name ?>">
+
+  </div>
+
+<?php } ?>
+
+
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
