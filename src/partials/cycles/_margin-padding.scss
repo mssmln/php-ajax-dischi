@@ -1,0 +1,13 @@
+@for $i from 1 through 5 {
+  .margin-top-#{$i * 10} {
+    margin-top: 10px * $i;
+  }
+}
+
+$i: 1;
+@while $i < 6 {
+  .padding-bottom-#{$i * 10} {
+    padding-bottom: 10px * $i;
+  }
+  $i: $i + 1;
+}
