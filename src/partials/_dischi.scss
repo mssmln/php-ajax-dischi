@@ -1,0 +1,3 @@
+div.dischi{
+  @include flex(wrap); // gli passo l'argomento non settato di default
+}

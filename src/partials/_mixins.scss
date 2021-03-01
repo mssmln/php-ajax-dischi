@@ -1,6 +1,13 @@
-@mixin container {
+@mixin container($width:1100px) {
   .container{
-    width: 1100px;
+    width: $width;
     margin: 0 auto;
   }
+}
+
+@mixin flex($wrap,$display:flex,$align:center,$justify:center){
+  display: $display;
+  align-items: $align;
+  justify-content: $justify;
+  flex-wrap: $wrap;
 }

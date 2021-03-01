@@ -28,20 +28,23 @@ include 'db.php'; // includiamo un file separato sempre php
 
   <main>
     <div class="container">
-      <?php
-      foreach($dischi as $disco){
-        // var_dump($disco);
-        $img = $disco['img'];
-        $name = $disco['name'];
-        $author = $disco['author'];
-        $date = $disco['date'];
-      ?>
-      <div class="disco">
-        <img src="<?php echo $img ?>" alt="<?php echo $name ?>">
+      <div class="dischi">
 
-      </div>
+        <?php
+        foreach($dischi as $disco){
+          // var_dump($disco);
+          $img = $disco['img'];
+          $name = $disco['name'];
+          $author = $disco['author'];
+          $date = $disco['date'];
+        ?>
+        <div class="disco">
+          <img src="<?php echo $img ?>" alt="<?php echo $name ?>">
 
-    <?php } ?>
+        </div>
+
+        <?php } ?>
+    </div>
 
     </div>
 

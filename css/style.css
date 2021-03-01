@@ -57,3 +57,10 @@ header {
   background-color: #565d61;
   height: 100px;
 }
+
+div.dischi {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
