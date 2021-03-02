@@ -15,7 +15,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('src/partials-php/server.php').then(function (response) {
+    axios.get('includes/server.php').then(function (response) {
       _this.dischi = response.data;
       console.log(_this.dischi);
     })["catch"](function (error) {

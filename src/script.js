@@ -5,7 +5,7 @@ let app = new Vue ({
   },
   mounted(){
     axios
-    .get('src/partials-php/server.php')
+    .get('includes/server.php')
     .then(response => {
       this.dischi = response.data;
       console.log(this.dischi);
